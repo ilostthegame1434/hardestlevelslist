@@ -40,6 +40,14 @@
     .level-box:hover {
       transform: scale(1.02);
     }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
     .level-image {
       width: 240px;
       height: auto;
@@ -71,10 +79,14 @@
 <main class="level-list">
 
   <div class="level-box">
-    <img class="aspect-[16/9] level-image" src="Amethyst.jpg">
+    <div class="image-wrapper">  
+      <img class="level-image" src="Amethyst.jpg">
+    </div>
     <div class="level-content">
       <h2><a href="amethyst.html">#1 – Amethyst</a></h2>
-      <p><i>iMist</i></p>
+      <p>Published by <i>iMist</i></p>
+      <p>Created by <i>iMist and more</i></p>
+      <p>Verified by <i>wPopoff</i></p>
     </div>
   </div>
 
